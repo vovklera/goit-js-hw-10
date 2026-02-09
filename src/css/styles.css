@@ -44,3 +44,20 @@
   height: 25px;
   font-size: 14px;
 }
+
+.fieldset{
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.fieldBtn{
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: rgb(147, 248, 214);
+  border-radius: 3px;
+  border: 2px solid rgb(61, 124, 114);
+}

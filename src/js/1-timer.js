@@ -25,7 +25,7 @@ const options = {
         
         userSelectedDate = selectedDates[0];
         if (userSelectedDate <= Date.now()) {
-            iziToast.show({
+            iziToast.warning({
                 message: 'Please choose a date in the future'
             });
             startBtn.disabled = true;
@@ -34,8 +34,6 @@ const options = {
         startBtn.disabled = false;
     },
 };
-
-
 
 flatpickr('#datetime-picker', options);
 
@@ -53,7 +51,6 @@ startBtn.addEventListener("click", () => {
             datetime.disabled = false;
             return;
         }
-
         updateClockface(ms);
     }, 1000);
 })
@@ -81,6 +78,4 @@ function updateClockface({ days, hours, minutes, seconds }) {
     minutesEl.textContent = minutes;
     hoursEl.textContent = hours;
     daysEl.textContent = days;
-}
-
-
+};

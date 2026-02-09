@@ -16,3 +16,31 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.timer{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+}
+
+.value{
+  font-size: 50px;
+}
+
+.input{
+  border-radius: 3px;
+}
+
+.button{
+  border: 2px solid rgb(252, 106, 157);
+  border-radius: 7px;
+  background-color: rgb(255, 205, 228);
+  height: 25px;
+  font-size: 14px;
+}
